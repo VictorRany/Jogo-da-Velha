@@ -1,0 +1,81 @@
+:root{
+  --font-one: 'Cherry Bomb One', cursive;
+  --font-two: 'Nunito', sans-serif;
+  --color-one: #e0904d;
+  --color-two: #884815;
+  --color-three: #e0985d;
+  --color-four: #362101;
+}
+body{
+  min-width: 305px;
+  font-family: var(--font-two),Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  margin: auto;
+  background-color: var(--color-one);
+  color: var(--color-two);
+}
+.title{
+  font-family: var(--font-one);
+  font-size: 2.75rem;
+}
+main{
+  text-align: center;
+}
+#start{
+  margin-top: 2rem;
+}
+#gameBoard{
+  background-color: var(--color-two);
+  margin: auto;
+  display: grid;
+  grid-template-columns: 6rem 6rem 6rem;
+  grid-template-rows: 6rem 6rem 6rem ;
+  gap: .5rem;
+  margin-bottom: 1.5rem;
+  max-width: 19rem;
+  cursor: pointer;
+}
+.inputClass{
+  padding: 0.6rem;
+  margin: 0.2rem;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: 1px 1px #00000079;
+  background-color: var(--color-three);
+  color: var(--color-two);
+}
+.inputClass::placeholder{
+  color:#ffffff56;
+}
+.labelClass{
+  font-size: 1.7rem;
+  font-weight: bolder;
+  padding: 0.4rem;
+}
+.buttonClass{
+  padding: 0.6rem;
+  border-radius: 10px;
+  border-color: var(--color-two);
+  border-style: double;
+  box-shadow: 1px 1px #00000079;
+  background-color: var(--color-one);
+  cursor: pointer;
+  margin-bottom: 1.7rem;
+  color: var(--color-two);
+}
+.buttonClass:hover{
+  background-color: var(--color-two);
+  color: var(--color-three);
+}
+.subTitle{
+  margin-top: -0.8rem;
+}
+#gameBoard span{
+  background-color: var(--color-one);
+  display: grid;
+  place-content: center;
+  font-size: 5rem;
+}
+.win{
+  color: var(--color-four);
+}

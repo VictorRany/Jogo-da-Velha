@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Nunito&family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <main>
+        <section id="playerInformation">
+            <h1 class="title">Tic-Tac-Toe</h1>
+            <label class="labelClass" for="playerOne">X</label>
+            <input class="inputClass" type="text" name="playerOne" id="playerOne" placeholder="Player One">
+            <br>
+            <label class="labelClass" for="playerTwo">O</label>
+            <input class="inputClass" type="text" name="playerTwo" id="playerTwo" placeholder="Player Two">
+            <br>
+            <button class="buttonClass" id="start">Start / Restart</button>
+            <h2 class="subTitle" id="subTitle"></h2>
+        </section>
+        <section id="gameBoard">
+            <span data-region="0.0"></span>
+            <span data-region="0.1"></span>
+            <span data-region="0.2"></span>
+            <span data-region="1.0"></span>
+            <span data-region="1.1"></span>
+            <span data-region="1.2"></span>
+            <span data-region="2.0"></span>
+            <span data-region="2.1"></span>
+            <span data-region="2.2"></span>
+        </section>
+        <section id="playerWin">
+        </section>
+    </main>
+    <script src="Script.js"></script>
+</body>
+</html>
